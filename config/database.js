@@ -3,8 +3,8 @@ mongoose.Promise = global.Promise;
 
 require("dotenv").config();
 const MONGO_URL = process.env.MONGO_URL;
-mongoose
-  .connect(MONGO_URL, {
+mongoose.connect(
+  "mongodb+srv://rafaelsccp10:<v15qwErp>@cluster0.3cq0sy1.mongodb.net/?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
